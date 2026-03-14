@@ -22,6 +22,39 @@ interface RenderComponents {
   footer: QuartzComponent
 }
 
+function publishColorStyle(frontmatter: Record<string, any> | undefined) {
+  const publishColor = frontmatter?.["publish-color"]
+  const publishColorDark = frontmatter?.["publish-color-dark"]
+  const project = typeof frontmatter?.proyecto === "string" ? frontmatter.proyecto.trim().toUpperCase() : ""
+  const defaultProjectColors: Record<string, { light: string; dark: string }> = {
+    UMNG: { light: "#3366cc", dark: "#7FB0FF" },
+    RTVE: { light: "#F6A30B", dark: "#FFC857" },
+  }
+
+  const lightColor =
+    typeof publishColor === "string" && publishColor.trim() !== ""
+      ? publishColor.trim()
+      : defaultProjectColors[project]?.light
+  const darkColor =
+    typeof publishColorDark === "string" && publishColorDark.trim() !== ""
+      ? publishColorDark.trim()
+      : defaultProjectColors[project]?.dark ?? lightColor
+
+  if (!lightColor) {
+    return undefined
+  }
+
+  if (!/^#([0-9a-fA-F]{3,8})$/.test(lightColor)) {
+    return undefined
+  }
+
+  if (darkColor && !/^#([0-9a-fA-F]{3,8})$/.test(darkColor)) {
+    return undefined
+  }
+
+  return `--page-accent-light: ${lightColor}; --page-accent-dark: ${darkColor ?? lightColor};`
+}
+
 const headerRegex = new RegExp(/h[1-6]/)
 export function pageResources(
   baseDir: FullSlug | RelativeURL,
@@ -259,10 +292,11 @@ export function renderPage(
 
   const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
   const direction = i18n(cfg.locale).direction ?? "ltr"
+  const bodyStyle = publishColorStyle(componentData.fileData.frontmatter)
   const doc = (
     <html lang={lang} dir={direction}>
       <Head {...componentData} />
-      <body data-slug={slug}>
+      <body data-slug={slug} style={bodyStyle}>
         <div id="quartz-root" class="page">
           <Body {...componentData}>
             {LeftComponent}

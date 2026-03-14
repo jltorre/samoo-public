@@ -1,3 +1,22 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+body[style*="--page-accent-light"] {
+  --secondary: var(--page-accent-light);
+  --tertiary: var(--page-accent-light);
+
+  .page-title a,
+  .breadcrumb-container a,
+  a.internal,
+  a.external {
+    color: var(--secondary);
+  }
+
+  .breadcrumb-container {
+    font-weight: 600;
+  }
+}
+
+:root[saved-theme="dark"] body[style*="--page-accent-dark"] {
+  --secondary: var(--page-accent-dark);
+  --tertiary: var(--page-accent-dark);
+}
