@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr"><head><title>Valoracion-evolutivo-Moodle-UDEMY-Business-SSO</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Sans:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Trabajo Público"/><meta property="og:title" content="Valoracion-evolutivo-Moodle-UDEMY-Business-SSO"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Valoracion-evolutivo-Moodle-UDEMY-Business-SSO"/><meta name="twitter:description" content="Valoración evolutivo Moodle - acceso a UDEMY Business por SSO Resumen Valoracón de la ampliación en local_afp para añadir un botón de URL configurable (en este caso para un acceso a UDEMY Business desde Moodle/OpenLMS)."/><meta property="og:description" content="Valoración evolutivo Moodle - acceso a UDEMY Business por SSO Resumen Valoracón de la ampliación en local_afp para añadir un botón de URL configurable (en este caso para un acceso a UDEMY Business desde Moodle/OpenLMS)."/><meta property="og:image:alt" content="Valoración evolutivo Moodle - acceso a UDEMY Business por SSO Resumen Valoracón de la ampliación en local_afp para añadir un botón de URL configurable (en este caso para un acceso a UDEMY Business desde Moodle/OpenLMS)."/><meta property="og:image" content="https://TU_USUARIO.github.io/obsidian-public-notes/static/og-image.png"/><meta property="og:image:url" content="https://TU_USUARIO.github.io/obsidian-public-notes/static/og-image.png"/><meta name="twitter:image" content="https://TU_USUARIO.github.io/obsidian-public-notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="TU_USUARIO.github.io/obsidian-public-notes"/><meta property="og:url" content="https://tu_usuario.github.io/obsidian-public-notes/clientes/k9v3m2/Valoracion-evolutivo-Moodle-UDEMY-Business-SSO"/><meta property="twitter:url" content="https://tu_usuario.github.io/obsidian-public-notes/clientes/k9v3m2/Valoracion-evolutivo-Moodle-UDEMY-Business-SSO"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="Valoración evolutivo Moodle - acceso a UDEMY Business por SSO Resumen Valoracón de la ampliación en local_afp para añadir un botón de URL configurable (en este caso para un acceso a UDEMY Business desde Moodle/OpenLMS)."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2psdG9ycmUvTGlicmFyeS9Nb2JpbGUgRG9jdW1lbnRzL2NvbX5hcHBsZX5DbG91ZERvY3Mvc2Ftb28tcHVibGljL3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="clientes/k9v3m2/Valoracion-evolutivo-Moodle-UDEMY-Business-SSO"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Trabajo Público</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Modo oscuro"><title>Modo oscuro</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Modo claro"><title>Modo claro</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Modo lector"><title>Modo lector</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../clientes/">Clientes</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../clientes/k9v3m2/">UMNG</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Valoracion evolutivo Moodle UDEMY Business SSO</a></div></nav><h1 class="article-title">Valoracion-evolutivo-Moodle-UDEMY-Business-SSO</h1><p show-comma="true" class="content-meta"><time datetime="2026-03-14T11:21:43.552Z">14 mar 2026</time><span>Se lee en 11 min</span></p></div></div><article class="popover-hint"><h1 id="valoración-evolutivo-moodle---acceso-a-udemy-business-por-sso">Valoración evolutivo Moodle - acceso a UDEMY Business por SSO<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#valoración-evolutivo-moodle---acceso-a-udemy-business-por-sso" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h1 id="resumen">Resumen<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#resumen" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>Valoracón de la ampliación en local_afp para añadir un botón de URL configurable (en este caso para un acceso a UDEMY Business desde Moodle/OpenLMS). Este enlace se añadiría como una tab más bien en la sección MIS CURSOS, bien en la sección CURSOS EN ABIERTO.</p>
+<p>Para el caso de UDEMY la recomendación es plantearlo como una redirección al tenant general de UDEMY con SSO estándar, sin intentar deep links internos ni asumir que el OAuth 2.0 actual de Google en OpenLMS resuelve por sí solo el acceso a UDEMY. La base técnica más defendible es UDEMY Business como SP + Google Workspace u otro IdP corporativo por SAML 2.0, dejando Moodle solo como punto de lanzamiento.</p>
+<p><strong>Valoración</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th><strong>Bloque</strong></th><th><strong>Detalle</strong></th><th style="text-align:right;"><strong>Horas</strong></th></tr></thead><tbody><tr><td>1</td><td>Análisis técnico y validación de integración</td><td style="text-align:right;">6</td></tr><tr><td>2</td><td>Diseño de la solución</td><td style="text-align:right;">4</td></tr><tr><td>3</td><td>Desarrollo en plugin Moodle</td><td style="text-align:right;">10</td></tr><tr><td>4</td><td>Configuración y pruebas de SSO</td><td style="text-align:right;">8</td></tr><tr><td>5</td><td>QA, documentación y despliegue</td><td style="text-align:right;">4</td></tr><tr><td></td><td><strong>Total estimado</strong></td><td style="text-align:right;"><strong>32</strong></td></tr></tbody></table></div>
+<p><strong>Qué entra en alcance</strong></p>
+<ul>
+<li>Añadir botón configurable en local_afp.</li>
+<li>Permitir activar/desactivar el botón.</li>
+<li>Permitir definir ubicación del botón.</li>
+<li>Redirigir al acceso general de UDEMY Business.</li>
+<li>Probar el flujo end-to-end y documentar configuración básica.</li>
+</ul>
+<p><strong>Dudas a confirmar</strong></p>
+<ul>
+<li>Si UDEMY Business tiene SSO habilitado o puede habilitarse.</li>
+<li>Si el IdP será Google Workspace por SAML u otro proveedor.</li>
+<li>URL exacta del tenant de UDEMY.</li>
+<li>Si hay aprovisionamiento automático y requisitos de licenciamiento.</li>
+<li>Ubicación final del botón en el plugin.</li>
+<li>Si el texto del botón debe ser fijo o configurable.</li>
+<li>Si habrá accesos técnicos y entorno de pruebas para validar.</li>
+</ul>
+<p><strong>Riesgos principales</strong></p>
+<ul>
+<li>El OAuth 2.0 actual de Google en OpenLMS no garantiza por sí mismo el acceso a UDEMY.</li>
+<li>UDEMY documenta SSO principalmente sobre SAML 2.0.</li>
+<li>No hay garantía pública de deep links a secciones internas tras SSO.</li>
+<li>El acceso real puede depender de licencia activa en UDEMY.</li>
+<li>Puede haber problemas de matching de identidad (email, NameID, etc.).</li>
+<li>El despliegue en OpenLMS depende de sus procedimientos y ventanas.</li>
+<li>El sandbox puede no replicar exactamente producción.</li>
+</ul>
+<p><strong>Conclusión</strong>
+La estimación de 32 horas es razonable para este alcance. El punto crítico no es tanto el
+desarrollo del botón en Moodle, sino confirmar antes el modelo real de SSO en UDEMY
+Business, el tenant de acceso y la federación con el IdP corporativo.</p>
+<hr/>
+<h1 id="completo">Completo<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#completo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="resumen-de-valoración">Resumen de valoración<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#resumen-de-valoración" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th><strong>Bloque</strong></th><th><strong>Detalle</strong></th><th style="text-align:right;"><strong>Horas</strong></th></tr></thead><tbody><tr><td>1</td><td>Análisis técnico y validación de integración</td><td style="text-align:right;">6</td></tr><tr><td>2</td><td>Diseño de la solución</td><td style="text-align:right;">4</td></tr><tr><td>3</td><td>Desarrollo en plugin Moodle</td><td style="text-align:right;">10</td></tr><tr><td>4</td><td>Configuración y pruebas de SSO</td><td style="text-align:right;">8</td></tr><tr><td>5</td><td>QA, documentación y despliegue</td><td style="text-align:right;">4</td></tr><tr><td></td><td><strong>Total estimado</strong></td><td style="text-align:right;"><strong>32</strong></td></tr></tbody></table></div>
+<h2 id="contexto">Contexto<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#contexto" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Se requiere ampliar el plugin local de Moodle <strong>Advanced Frontpage</strong> (<code>local_afp</code>), desarrollado a medida en OpenLMS. En dicho plugin se muestran los cursos del estudiante divididos por categorías y el objetivo es incorporar un ajuste para poder mostrar un botón adicional que dirija al usuario a UDEMY Business.</p>
+<p>La navegación debe realizarse mediante SSO para que el usuario sea trasladado de forma automática, sin solicitar un inicio de sesión adicional. El cliente ya dispone de integración con Google OAuth 2.0, pero según la documentación pública de UDEMY Business la integración SSO estándar se apoya en SAML 2.0, incluido el caso de Google Workspace, por lo que no debe asumirse que el OAuth 2.0 actual resuelve por sí solo el acceso a UDEMY.</p>
+<h2 id="alcance-propuesto">Alcance propuesto<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#alcance-propuesto" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Análisis funcional y técnico del plugin actual y del punto exacto donde debe incorporarse el botón.</li>
+<li>Revisión de las capacidades de SSO disponibles entre OpenLMS, Google OAuth 2.0 y UDEMY Business.</li>
+<li>Definición de la estrategia de integración más adecuada según las capacidades reales del entorno.</li>
+<li>Desarrollo del cambio en el plugin para mostrar el botón de acceso a UDEMY Business.</li>
+<li>Implementación de un ajuste de configuración para activar o desactivar la funcionalidad.</li>
+<li>Implementación de un ajuste de configuración para definir la ubicación del botón dentro del plugin.</li>
+<li>Implementación de la lógica necesaria para redirigir al usuario autenticado.</li>
+<li>Pruebas funcionales y técnicas en entorno de desarrollo o validación.</li>
+<li>Documentación breve de configuración y dependencias.</li>
+</ul>
+<h2 id="configuración-funcional-prevista-en-el-plugin">Configuración funcional prevista en el plugin<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#configuración-funcional-prevista-en-el-plugin" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>La evolución se plantea de forma configurable para evitar desarrollos posteriores innecesarios y permitir adaptar la visualización según la necesidad funcional.</p>
+<p>Se propone incorporar, como mínimo, los siguientes ajustes en el plugin:</p>
+<ol>
+<li>Activar o desactivar la visualización del botón de UDEMY Business.</li>
+<li>Definir la ubicación del botón, con dos opciones previstas inicialmente:
+<ul>
+<li>pestaña de <strong>Mis cursos</strong></li>
+<li>pestaña de <strong>Cursos en abierto</strong></li>
+</ul>
+</li>
+<li>Definir el texto visible del botón, si se considera conveniente.</li>
+<li>Definir la URL general de destino de UDEMY Business, para dejarla parametrizable.</li>
+</ol>
+<p>Con este enfoque, la funcionalidad podrá habilitarse o no desde configuración y colocarse en la ubicación que mejor encaje con la experiencia del usuario.</p>
+<h2 id="configuración-recomendada-que-sí-puede-asegurarse-con-la-documentación-pública-de-udemy">Configuración recomendada que sí puede asegurarse con la documentación pública de UDEMY<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#configuración-recomendada-que-sí-puede-asegurarse-con-la-documentación-pública-de-udemy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Con la información pública disponible, la configuración más segura y defendible para este evolutivo es la siguiente:</p>
+<ol>
+<li>El botón del plugin debe dirigir al usuario a la entrada general de UDEMY Business del tenant del cliente, no a un subapartado concreto.</li>
+<li>El acceso debe plantearse como SSO estándar contra UDEMY Business, tomando como referencia una entrada genérica del tenant tipo <code>https://&lt;tenant>.udemy.com</code> o la URL oficial que facilite el propio cliente/UDEMY.</li>
+<li>La federación recomendada debe basarse en SAML 2.0, ya que es el mecanismo públicamente documentado por UDEMY para SSO corporativo.</li>
+<li>Si el cliente desea reutilizar Google como proveedor de identidad, debe hacerse mediante Google Workspace como IdP SAML frente a UDEMY, no asumiendo reutilización directa del OAuth 2.0 ya presente en OpenLMS.</li>
+<li>La funcionalidad del plugin debe limitarse a mostrar el botón y redirigir al usuario al punto de entrada SSO de UDEMY Business, evitando comprometer destinos internos concretos no garantizados por documentación pública.</li>
+<li>La validación funcional debe darse por correcta cuando el usuario autenticado en el ecosistema corporativo llega a UDEMY Business sin inicio de sesión adicional o, en su defecto, cuando el flujo de federación le traslada al inicio de sesión corporativo esperado y después accede a UDEMY.</li>
+</ol>
+<p>Esta propuesta evita depender de deep links no documentados y encaja con el comportamiento que sí aparece en la documentación pública de UDEMY.</p>
+<h2 id="configuración-técnica-prevista-de-sso">Configuración técnica prevista de SSO<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#configuración-técnica-prevista-de-sso" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Para este caso, no se considera necesario instalar un plugin SAML adicional en Moodle/OpenLMS si el objetivo es únicamente lanzar al usuario desde el plugin hacia UDEMY Business.</p>
+<p>El enfoque recomendado es el siguiente:</p>
+<ol>
+<li>El plugin de Moodle/OpenLMS muestra el botón y realiza la redirección a la URL general del tenant de UDEMY Business.</li>
+<li>UDEMY Business actúa como proveedor de servicio y gestiona el flujo SSO contra el proveedor de identidad corporativo.</li>
+<li>La configuración principal del SSO se realiza en UDEMY Business y en el proveedor de identidad corporativo, previsiblemente Google Workspace mediante SAML.</li>
+<li>Moodle/OpenLMS no necesita intervenir en el intercambio SAML si solo actúa como punto de lanzamiento.</li>
+</ol>
+<p>Por tanto, a nivel técnico, se prevén estas piezas:</p>
+<ul>
+<li>En <code>Moodle/OpenLMS</code>: ajuste configurable, botón y redirección.</li>
+<li>En <code>UDEMY Business</code>: habilitación y configuración del SSO.</li>
+<li>En <code>Google Workspace</code> u otro IdP corporativo: configuración de la aplicación SAML y mapeo de atributos.</li>
+</ul>
+<p>Solo sería necesario plantear un plugin SAML en Moodle/OpenLMS si se quisiera unificar también el inicio de sesión de Moodle con el mismo IdP mediante SAML o si el alcance evolucionara hacia una integración de autenticación más profunda.</p>
+<h2 id="información-que-hace-falta-confirmar">Información que hace falta confirmar<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#información-que-hace-falta-confirmar" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Para cerrar la estimación con mayor precisión es necesario disponer de lo siguiente:</p>
+<ol>
+<li>Confirmación de que UDEMY Business tiene habilitado o puede habilitar el mecanismo de SSO requerido.</li>
+<li>Confirmación de si el SSO se realizará usando Google Workspace como Identity Provider SAML o si existirá otro proveedor/intermediario.</li>
+<li>URL exacta del tenant de UDEMY Business y datos técnicos de configuración SSO.</li>
+<li>Confirmación de si existe aprovisionamiento automático de usuarios por SSO y si hay requisitos adicionales de licenciamiento.</li>
+<li>Confirmación de la ubicación final preferida para el botón: pestaña de <strong>Mis cursos</strong> o pestaña de <strong>Cursos en abierto</strong>.</li>
+<li>Confirmación de si debe existir texto configurable para el botón o un literal fijo.</li>
+<li>Accesos técnicos o apoyo del cliente para revisar configuración de OpenLMS, Google y UDEMY Business.</li>
+<li>Disponibilidad de entorno de pruebas y usuarios de validación.</li>
+</ol>
+<h2 id="trabajos-necesarios">Trabajos necesarios<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#trabajos-necesarios" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-análisis-técnico-y-validación-de-integración">1. Análisis técnico y validación de integración<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-análisis-técnico-y-validación-de-integración" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Revisión del plugin actual y de su arquitectura.</li>
+<li>Identificación del punto de extensión para añadir el botón.</li>
+<li>Revisión de documentación y capacidades reales de SSO en UDEMY Business y OpenLMS.</li>
+<li>Validación de dependencias, restricciones y riesgos.</li>
+<li>Confirmación del punto de entrada general de UDEMY Business a utilizar.</li>
+</ul>
+<p><strong>Estimación:</strong> 6 horas</p>
+<h3 id="2-diseño-de-la-solución">2. Diseño de la solución<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-diseño-de-la-solución" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Definición del flujo de usuario.</li>
+<li>Definición del mecanismo de redirección y parámetros necesarios.</li>
+<li>Diseño de gestión de errores o escenarios sin acceso SSO.</li>
+<li>Definición de visibilidad, textos y comportamiento del botón en desktop y móvil.</li>
+<li>Definición del ajuste de activación y del ajuste de ubicación.</li>
+</ul>
+<p><strong>Estimación:</strong> 4 horas</p>
+<h3 id="3-desarrollo-en-plugin-moodle">3. Desarrollo en plugin Moodle<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-desarrollo-en-plugin-moodle" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Implementación visual del botón en la vista actual de cursos.</li>
+<li>Desarrollo de la lógica de acceso/redirección.</li>
+<li>Implementación del ajuste para mostrar u ocultar el botón.</li>
+<li>Implementación del ajuste para seleccionar la ubicación del botón.</li>
+<li>Ajustes de permisos o visibilidad si aplican.</li>
+<li>Implementación orientada a redirección general a UDEMY Business, sin dependencia de rutas internas no garantizadas.</li>
+</ul>
+<p><strong>Estimación:</strong> 10 horas</p>
+<h3 id="4-configuración-y-pruebas-de-sso">4. Configuración y pruebas de SSO<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-configuración-y-pruebas-de-sso" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Pruebas conjuntas con la configuración real del cliente.</li>
+<li>Ajustes de integración según resultados.</li>
+<li>Validación del flujo end-to-end sin inicio de sesión adicional cuando el usuario ya tenga sesión corporativa activa.</li>
+<li>Validación del comportamiento con usuario con licencia activa y usuario sin acceso, si es posible.</li>
+</ul>
+<p><strong>Estimación:</strong> 8 horas</p>
+<h3 id="5-qa-documentación-y-despliegue">5. QA, documentación y despliegue<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-qa-documentación-y-despliegue" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Pruebas funcionales finales.</li>
+<li>Documentación breve de configuración.</li>
+<li>Soporte a paso a validación o despliegue.</li>
+</ul>
+<p><strong>Estimación:</strong> 4 horas</p>
+<h2 id="estimación-total">Estimación total<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#estimación-total" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Escenario base:</strong> 32 horas</li>
+</ul>
+<h2 id="limitaciones-y-condicionantes-identificados">Limitaciones y condicionantes identificados<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#limitaciones-y-condicionantes-identificados" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="udemy-business">UDEMY Business<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#udemy-business" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>La documentación pública de UDEMY Business describe SSO principalmente sobre SAML 2.0.</li>
+<li>No se considera garantizado que el OAuth 2.0 de Google ya existente en OpenLMS sirva directamente para el acceso a UDEMY.</li>
+<li>No se ha encontrado garantía pública de deep links arbitrarios a subapartados concretos tras el SSO; por ello se recomienda acceso genérico al tenant de UDEMY Business.</li>
+<li>El acceso real puede depender de que el usuario tenga licencia activa en UDEMY Business.</li>
+<li>El aprovisionamiento automático de usuarios y la asignación avanzada de grupos puede requerir configuraciones adicionales en UDEMY.</li>
+<li>El matching de identidad puede depender de campos como <code>email</code>, <code>NameID</code> y otros identificadores corporativos.</li>
+</ul>
+<h3 id="openlms">OpenLMS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#openlms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Aunque el desarrollo del plugin es viable, el despliegue final en OpenLMS puede quedar sujeto a sus ventanas y procedimientos de liberación.</li>
+<li>El sandbox de OpenLMS puede no replicar de forma exacta todos los comportamientos productivos y debe contemplarse en el plan de pruebas.</li>
+<li>Si el botón depende de personalizaciones de tema o regiones visuales concretas, puede haber diferencias según el tema y la versión del entorno.</li>
+<li>El riesgo funcional en OpenLMS es bajo para una redirección externa simple; el mayor condicionante es operativo, no de desarrollo.</li>
+<li>No se prevé como requisito la instalación de un plugin SAML en Moodle/OpenLMS para este alcance concreto.</li>
+</ul>
+<h2 id="consideraciones-y-supuestos">Consideraciones y supuestos<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#consideraciones-y-supuestos" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>La estimación parte de que el plugin actual está localizado, es mantenible y permite una extensión sin rehacer su arquitectura.</li>
+<li>Se asume que UDEMY Business dispone de un mecanismo de SSO compatible y que el cliente puede facilitar configuración, metadatos o apoyo técnico para activarlo.</li>
+<li>Se asume que el alcance funcional aceptado es acceso general a UDEMY Business y no navegación garantizada a una sección interna concreta.</li>
+<li>Se asume que la funcionalidad se implementará mediante configuración del propio plugin, permitiendo mostrar u ocultar el botón y seleccionar su ubicación.</li>
+<li>Si fuera necesario implementar una integración distinta a una simple redirección SSO, la estimación debería revisarse.</li>
+<li>Si el flujo requiere desarrollos adicionales de aprovisionamiento, sincronización de usuarios, mapeo de identidades o cambios en infraestructura, quedaría fuera de este alcance inicial.</li>
+<li>La validación final depende de disponer de accesos y entorno de pruebas.</li>
+</ul>
+<h2 id="riesgos-principales">Riesgos principales<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#riesgos-principales" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Dependencia de terceros para configuración de Google Workspace / IdP y UDEMY Business.</li>
+<li>Necesidad de habilitar o ajustar SSO SAML en UDEMY Business.</li>
+<li>Posibles incidencias de matching de identidad o ausencia de licencia en UDEMY Business.</li>
+<li>Condicionantes de despliegue y pruebas propios de OpenLMS.</li>
+</ul>
+<h2 id="recomendación">Recomendación<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#recomendación" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Como primera aproximación, la valoración de <strong>32 horas</strong> sigue siendo razonable para análisis, implementación, pruebas y documentación. Dado que el plugin está controlado internamente, la principal condición para cerrar el compromiso no es el desarrollo en OpenLMS sino confirmar el modelo de SSO disponible en UDEMY Business, la URL general de acceso del tenant y la configuración de federación con el proveedor de identidad corporativo.</p>
+<h2 id="referencias-revisadas">Referencias revisadas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#referencias-revisadas" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Overview of UDEMY Business SSO Core Features</li>
+<li>How to Configure a Custom SSO Connection</li>
+<li>How to Configure SSO With Google Workspace</li>
+<li>How to Test Your Learning Management System Integration With UDEMY Business</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-0" aria-expanded="true"><h3>Tabla de Contenidos</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#valoración-evolutivo-moodle---acceso-a-udemy-business-por-sso" data-for="valoración-evolutivo-moodle---acceso-a-udemy-business-por-sso">Valoración evolutivo Moodle - acceso a UDEMY Business por SSO</a></li><li class="depth-0"><a href="#resumen" data-for="resumen">Resumen</a></li><li class="depth-0"><a href="#completo" data-for="completo">Completo</a></li><li class="depth-1"><a href="#resumen-de-valoración" data-for="resumen-de-valoración">Resumen de valoración</a></li><li class="depth-1"><a href="#contexto" data-for="contexto">Contexto</a></li><li class="depth-1"><a href="#alcance-propuesto" data-for="alcance-propuesto">Alcance propuesto</a></li><li class="depth-1"><a href="#configuración-funcional-prevista-en-el-plugin" data-for="configuración-funcional-prevista-en-el-plugin">Configuración funcional prevista en el plugin</a></li><li class="depth-1"><a href="#configuración-recomendada-que-sí-puede-asegurarse-con-la-documentación-pública-de-udemy" data-for="configuración-recomendada-que-sí-puede-asegurarse-con-la-documentación-pública-de-udemy">Configuración recomendada que sí puede asegurarse con la documentación pública de UDEMY</a></li><li class="depth-1"><a href="#configuración-técnica-prevista-de-sso" data-for="configuración-técnica-prevista-de-sso">Configuración técnica prevista de SSO</a></li><li class="depth-1"><a href="#información-que-hace-falta-confirmar" data-for="información-que-hace-falta-confirmar">Información que hace falta confirmar</a></li><li class="depth-1"><a href="#trabajos-necesarios" data-for="trabajos-necesarios">Trabajos necesarios</a></li><li class="depth-2"><a href="#1-análisis-técnico-y-validación-de-integración" data-for="1-análisis-técnico-y-validación-de-integración">1. Análisis técnico y validación de integración</a></li><li class="depth-2"><a href="#2-diseño-de-la-solución" data-for="2-diseño-de-la-solución">2. Diseño de la solución</a></li><li class="depth-2"><a href="#3-desarrollo-en-plugin-moodle" data-for="3-desarrollo-en-plugin-moodle">3. Desarrollo en plugin Moodle</a></li><li class="depth-2"><a href="#4-configuración-y-pruebas-de-sso" data-for="4-configuración-y-pruebas-de-sso">4. Configuración y pruebas de SSO</a></li><li class="depth-2"><a href="#5-qa-documentación-y-despliegue" data-for="5-qa-documentación-y-despliegue">5. QA, documentación y despliegue</a></li><li class="depth-1"><a href="#estimación-total" data-for="estimación-total">Estimación total</a></li><li class="depth-1"><a href="#limitaciones-y-condicionantes-identificados" data-for="limitaciones-y-condicionantes-identificados">Limitaciones y condicionantes identificados</a></li><li class="depth-2"><a href="#udemy-business" data-for="udemy-business">UDEMY Business</a></li><li class="depth-2"><a href="#openlms" data-for="openlms">OpenLMS</a></li><li class="depth-1"><a href="#consideraciones-y-supuestos" data-for="consideraciones-y-supuestos">Consideraciones y supuestos</a></li><li class="depth-1"><a href="#riesgos-principales" data-for="riesgos-principales">Riesgos principales</a></li><li class="depth-1"><a href="#recomendación" data-for="recomendación">Recomendación</a></li><li class="depth-1"><a href="#referencias-revisadas" data-for="referencias-revisadas">Referencias revisadas</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Creado con <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/TU_USUARIO/obsidian-public-notes">GitHub</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">
+        const socket = new WebSocket('ws://localhost:3001')
+        // reload(true) ensures resources like images and scripts are fetched again in firefox
+        socket.addEventListener('message', () => document.location.reload(true))
+      </script><script src="../../postscript.js" type="module" data-persist="true"></script></html>
